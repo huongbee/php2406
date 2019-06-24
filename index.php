@@ -6,10 +6,11 @@
  * This is more cmt
  */
 
-echo 'Hello World!';
+$a = 4;
+$b = 2;
+$c = $a + $b;
+// echo 'Tong cua '.$a.' va '.$b.' la '.$c;
 
-echo 'Hello World!';
-
-print_r('Hello World!');
+echo "Tong cua $a va $b la $c";
 
 ?>
