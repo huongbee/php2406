@@ -9,41 +9,20 @@
 </head>
 <body>
     <div class="banco">
-        <div class="white"> </div>
-        <div class="black"> </div>
-        <div class="white"> </div>
-        <div class="black"> </div>
-        <div class="white"> </div>
-        <div class="black"> </div>
-        <div class="white"> </div>
-        <div class="black"> </div>
-
-        <div class="black"> </div>
-        <div class="white"> </div>
-        <div class="black"> </div>
-        <div class="white"> </div>
-        <div class="black"> </div>
-        <div class="white"> </div>
-        <div class="black"> </div>
-        <div class="white"> </div>
-
-        <div class="white"> </div>
-        <div class="black"> </div>
-        <div class="white"> </div>
-        <div class="black"> </div>
-        <div class="white"> </div>
-        <div class="black"> </div>
-        <div class="white"> </div>
-        <div class="black"> </div>
-
-        <div class="black"> </div>
-        <div class="white"> </div>
-        <div class="black"> </div>
-        <div class="white"> </div>
-        <div class="black"> </div>
-        <div class="white"> </div>
-        <div class="black"> </div>
-        <div class="white"> </div>
+        <?php
+            for($y = 1; $y<=8; $y++){
+                for($x = 1; $x<=8; $x++){
+                    // if(($y + $x) % 2 == 0){
+                    //     echo '<div class="white"> </div>';
+                    // }
+                    if(($y%2==0 && $x%2==0) || ($y%2!=0 && $x%2!=0)){
+                        echo '<div class="white"> </div>';
+                    }
+                    else echo '<div class="black"> </div>';
+                }
+            }
+        
+        ?>
     </div>
 </body>
 </html>
