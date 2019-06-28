@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bàn cờ</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="banco">
@@ -25,7 +26,24 @@
         <div class="white"> </div>
         <div class="black"> </div>
         <div class="white"> </div>
+
+        <div class="white"> </div>
+        <div class="black"> </div>
+        <div class="white"> </div>
+        <div class="black"> </div>
+        <div class="white"> </div>
+        <div class="black"> </div>
+        <div class="white"> </div>
+        <div class="black"> </div>
+
+        <div class="black"> </div>
+        <div class="white"> </div>
+        <div class="black"> </div>
+        <div class="white"> </div>
+        <div class="black"> </div>
+        <div class="white"> </div>
+        <div class="black"> </div>
+        <div class="white"> </div>
     </div>
-    
 </body>
 </html>
