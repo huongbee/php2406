@@ -16,7 +16,8 @@ $list = [
         'price' => 9990000,
         'image' => 'https://cdn.tgdd.vn/Products/Images/42/87846/iphone-6s-plus-32gb-400x460.png'
     ],
-
 ];
+
+class A{}
 
 ?>
