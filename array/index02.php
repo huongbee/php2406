@@ -1,12 +1,26 @@
 <?php
-$backend = [ 'PHP', 'MySQL', 'MongoDB', 'NodeJS'];
+$backend = [ 'PHP', 'MySQL', 'MongoDB', 'Nodejs', '...'];
 
 //  Search key 3 in $backend
+if(array_key_exists(3, $backend)) echo $backend[3];
+else echo 'ko tim thay';
+
+// foreach($backend as $index => $value){
+//     if($index == 3){
+//         echo $value; break;
+//     }
+// }
+
+
+// $count = count($backend); // 5
+// if($count - 1 >= 3){
+//     echo $backend[3];
+// }
+// else echo 'ko tim thay';
 
 
 // if(in_array('NodeJS', $backend)) echo 'Tim thay';
 // else echo 'Ko tim thay';
-
 
 // $tmp = false;
 // foreach($backend as $sub){
