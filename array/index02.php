@@ -1,6 +1,7 @@
 <?php
 $backend = [ 'PHP', 'MySQL', 'MongoDB', 'NodeJS'];
 
+//  Search key 3 in $backend
 
 
 // if(in_array('NodeJS', $backend)) echo 'Tim thay';
