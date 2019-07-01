@@ -11,11 +11,12 @@ $arrString = [
 
 // $backend = [ 'PHP', 'MySQL' ];
 // $frontEnd = [ 'HTML', 'CSS', 'JS', 'Angular' ];
+$level3 = array('AngularJS', 'Angular 8');
 $arrSubject = [
     'backend' => [ 'PHP', 'MySQL' ],
-    'frontend' => [ 'HTML', 'CSS', 'JS', 'Angular' ]
+    'frontend' => [ 'HTML', 'CSS', 'JS', 'Angular' => $level3 ]
 ];
-// echo 'Angular';
+print_r($arrSubject['frontend']['Angular'][1]);
 
 // $newArr = [
 //     0 => [
