@@ -1,3 +1,14 @@
+body{
+    background-color: antiquewhite
+}
 .container{
-    
+    width: 1110px; /* 370*3 = 1110px */
+}
+.image img{
+    height: 150px;
+}
+.product{
+    width: 350px;
+    margin: 10px;
+    float: left;
 }
