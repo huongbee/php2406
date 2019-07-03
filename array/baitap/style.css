@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
 body{
     background-color: antiquewhite
 }
@@ -28,4 +29,8 @@ ul li{
 }
 .info p{
     margin-left: 14px
+}
+.promotion{
+    color: red;
+    font-family: 'Lobster', cursive;
 }
