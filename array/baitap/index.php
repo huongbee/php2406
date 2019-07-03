@@ -15,18 +15,13 @@
             </div>
             <div class="info">
                 <p><strong>OPPO Reno</strong></p>
-                <ol type="I">
+                <ul>
                     <li>Tặng thêm 1 năm bảo hành</li>
                     <li>Tặng thêm 1 năm bảo hành</li>
-                    <li class="promotion">Khuyến mãi
-                        <ol type="a">
-                            <li>Thong tin</li>
-                            <li>Thong tin</li>
-                        </ol>
-                    </li>
+                    <li class="promotion">Khuyến mãi</li>
                     <li>Tặng thêm 1 năm bảo hành</li>
                     <li>Tặng thêm 1 năm bảo hành</li>
-                </ol>
+                </ul>
             </div>
             <div class="name-price">
                 <p class="name"> OPPO Reno </p>
