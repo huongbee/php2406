@@ -16,10 +16,10 @@
         ?>
             <div class="product">
                 <div class="image">
-                    <img src="https://cdn.tgdd.vn/Products/Images/42/200438/oppo-reno-green-400x460.png">
+                    <img src="<?=$product['image']?>">
                 </div>
                 <div class="info">
-                    <p><strong>OPPO Reno</strong></p>
+                    <p><strong><?= $product['name']?></strong></p>
                     <ul>
                         <li>Tặng thêm 1 năm bảo hành</li>
                         <li>Tặng thêm 1 năm bảo hành</li>
@@ -29,8 +29,9 @@
                     </ul>
                 </div>
                 <div class="name-price">
-                    <p class="name"> OPPO Reno </p>
-                    <p class="price"> 12.990.000 ₫ </p>
+                    <p class="name"> <?= $product['name']?> </p>
+                    <p class="price"> <?=number_format($product['price'])?> ₫ </p>
+                    <p class="price"> <?=number_format($product['price'], 4, ',', '.')?> ₫ </p>
                 </div>
             </div>
         <?php endforeach?>
