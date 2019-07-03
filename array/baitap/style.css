@@ -3,6 +3,7 @@ body{
 }
 .container{
     width: 1110px; /* 370*3 = 1110px */
+    margin: auto;
 }
 .image img{
     height: 150px;
@@ -11,4 +12,20 @@ body{
     width: 350px;
     margin: 10px;
     float: left;
+    background-color: #fff
+}
+.image{
+    width: 40%;
+    float: left;
+}
+.info{
+    width: 60%;
+    float: left;
+}
+ul li{
+    list-style-type: none;
+    margin-left: -25px;
+}
+.info p{
+    margin-left: 14px
 }
