@@ -8,6 +8,7 @@ body{
 }
 .image img{
     height: 150px;
+    margin: 10px;
 }
 .product{
     width: 350px;
@@ -26,6 +27,7 @@ body{
 ul li{
     list-style-type: none;
     margin-left: -25px;
+    line-height: 22px
 }
 .info p{
     margin-left: 14px
@@ -33,4 +35,14 @@ ul li{
 .promotion{
     color: red;
     font-family: 'Lobster', cursive;
+}
+.name-price{
+    clear: both;
+    padding-left: 20px;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 600
+}
+.price{
+    color: red
 }
