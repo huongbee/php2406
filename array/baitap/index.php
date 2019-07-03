@@ -9,7 +9,125 @@
 </head>
 <body>
     <div class="container">
-        
+        <div class="product">
+            <div class="image">
+                <img src="https://cdn.tgdd.vn/Products/Images/42/200438/oppo-reno-green-400x460.png">
+            </div>
+            <div class="info">
+                <p><strong>OPPO Reno</strong></p>
+                <ol type="I">
+                    <li>Tặng thêm 1 năm bảo hành</li>
+                    <li>Tặng thêm 1 năm bảo hành</li>
+                    <li class="promotion">Khuyến mãi
+                        <ol type="a">
+                            <li>Thong tin</li>
+                            <li>Thong tin</li>
+                        </ol>
+                    </li>
+                    <li>Tặng thêm 1 năm bảo hành</li>
+                    <li>Tặng thêm 1 năm bảo hành</li>
+                </ol>
+            </div>
+            <div class="name-price">
+                <p class="name"> OPPO Reno </p>
+                <p class="price"> 12.990.000 ₫ </p>
+            </div>
+        </div>
+        <div class="product">
+            <div class="image">
+                <img src="https://cdn.tgdd.vn/Products/Images/42/200438/oppo-reno-green-400x460.png">
+            </div>
+            <div class="info">
+                <p><strong>OPPO Reno</strong></p>
+                <ul>
+                    <li>Tặng thêm 1 năm bảo hành</li>
+                    <li>Tặng thêm 1 năm bảo hành</li>
+                    <li class="promotion">Khuyến mãi</li>
+                    <li>Tặng thêm 1 năm bảo hành</li>
+                    <li>Tặng thêm 1 năm bảo hành</li>
+                </ul>
+            </div>
+            <div class="name-price">
+                <p class="name"> OPPO Reno </p>
+                <p class="price"> 12.990.000 ₫ </p>
+            </div>
+        </div>
+        <div class="product">
+            <div class="image">
+                <img src="https://cdn.tgdd.vn/Products/Images/42/200438/oppo-reno-green-400x460.png">
+            </div>
+            <div class="info">
+                <p><strong>OPPO Reno</strong></p>
+                <ul>
+                    <li>Tặng thêm 1 năm bảo hành</li>
+                    <li>Tặng thêm 1 năm bảo hành</li>
+                    <li class="promotion">Khuyến mãi</li>
+                    <li>Tặng thêm 1 năm bảo hành</li>
+                    <li>Tặng thêm 1 năm bảo hành</li>
+                </ul>
+            </div>
+            <div class="name-price">
+                <p class="name"> OPPO Reno </p>
+                <p class="price"> 12.990.000 ₫ </p>
+            </div>
+        </div>
+        <div class="product">
+            <div class="image">
+                <img src="https://cdn.tgdd.vn/Products/Images/42/200438/oppo-reno-green-400x460.png">
+            </div>
+            <div class="info">
+                <p><strong>OPPO Reno</strong></p>
+                <ul>
+                    <li>Tặng thêm 1 năm bảo hành</li>
+                    <li>Tặng thêm 1 năm bảo hành</li>
+                    <li class="promotion">Khuyến mãi</li>
+                    <li>Tặng thêm 1 năm bảo hành</li>
+                    <li>Tặng thêm 1 năm bảo hành</li>
+                </ul>
+            </div>
+            <div class="name-price">
+                <p class="name"> OPPO Reno </p>
+                <p class="price"> 12.990.000 ₫ </p>
+            </div>
+        </div>
+        <div class="product">
+            <div class="image">
+                <img src="https://cdn.tgdd.vn/Products/Images/42/200438/oppo-reno-green-400x460.png">
+            </div>
+            <div class="info">
+                <p><strong>OPPO Reno</strong></p>
+                <ul>
+                    <li>Tặng thêm 1 năm bảo hành</li>
+                    <li>Tặng thêm 1 năm bảo hành</li>
+                    <li class="promotion">Khuyến mãi</li>
+                    <li>Tặng thêm 1 năm bảo hành</li>
+                    <li>Tặng thêm 1 năm bảo hành</li>
+                </ul>
+            </div>
+            <div class="name-price">
+                <p class="name"> OPPO Reno </p>
+                <p class="price"> 12.990.000 ₫ </p>
+            </div>
+        </div>
+        <div class="product">
+            <div class="image">
+                <img src="https://cdn.tgdd.vn/Products/Images/42/200438/oppo-reno-green-400x460.png">
+            </div>
+            <div class="info">
+                <p><strong>OPPO Reno</strong></p>
+                <ul>
+                    <li>Tặng thêm 1 năm bảo hành</li>
+                    <li>Tặng thêm 1 năm bảo hành</li>
+                    <li class="promotion">Khuyến mãi</li>
+                    <li>Tặng thêm 1 năm bảo hành</li>
+                    <li>Tặng thêm 1 năm bảo hành</li>
+                </ul>
+            </div>
+            <div class="name-price">
+                <p class="name"> OPPO Reno </p>
+                <p class="price"> 12.990.000 ₫ </p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
