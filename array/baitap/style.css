@@ -46,3 +46,6 @@ ul li{
 .price{
     color: red
 }
+.name{
+    opacity: 0.7;
+}
