@@ -23,7 +23,8 @@
         <br>
         Password: <input type="password" name="password">
         <br>
-        Confirm Password: <input type="password" name="confirm_password">
+        Confirm Password: <input type="password"
+        name="confirm_password" minlength="6">
         <br>
         <button type="reset">Clear</button>
         <!-- <button>Submit</button> -->
