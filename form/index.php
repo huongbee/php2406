@@ -9,14 +9,18 @@
 <body>
     <h2>Create user account</h2>
     <form>
-        Name: <input type="text">
+        Name: <input type="text" placeholder="Enter name">
         <br>
-        Email: <input type="email">
+        Email: <input type="email" value="admin@gmail.com">
         <br>
-        Gender: <input type="radio"> Male
-                <input type="radio"> Female
+        Gender: <label> 
+                    <input type="radio" name="gender" value="male">
+                    Male
+                </label>
+                <input type="radio" name="gender" value="female"
+                id="female"> 
+                <label for="female">Female </label>
         <br>
-        
         Password: <input type="password">
         <br>
         Confirm Password: <input type="password">
