@@ -9,6 +9,13 @@
 <body>
     <?php
     // $kq = '';
+    $arrPT = [
+        '+' => 'Cộng',
+        '-' => 'Trừ', 
+        '*' => 'Nhân', 
+        '/' => 'Chia', 
+        '%' => 'Chia dư'
+    ];
     if(isset($_POST['btnCalc'])){
         $a = $_POST['so_a'];
         $b = $_POST['so_b'];
@@ -30,21 +37,9 @@
     <form method="POST">
         <input type="number" name="so_a" placeholder="Enter number a" value="<?= isset($a) ? $a : '' ?>">
         <select name="pheptinh">
-            <option value="+"
-                <?=isset($pt) && $pt=='+' ? 'selected' : '' ?>
-            >Cộng</option>
-            <option value="-"
-                <?=isset($pt) && $pt=='-' ? 'selected' : '' ?>
-            >Trừ</option>
-            <option value="*"
-                <?=isset($pt) && $pt=='*' ? 'selected' : '' ?>
-            >Nhân</option>
-            <option value="/"
-                <?=isset($pt) && $pt=='/' ? 'selected' : '' ?>
-            >Chia</option>
-            <option value="%"
-                <?=isset($pt) && $pt=='%' ? 'selected' : '' ?>
-            >Chia dư</option>
+            <?php foreach($arrPT as $key => $pheptinh):?>
+            <option value="<?=$key?>"><?=$pheptinh?></option>
+            <?php endforeach?>
         </select>
         <input type="number" name="so_b"
         value="<?php echo isset($b) ? $b : ''?>"
