@@ -18,30 +18,38 @@
     ];
     if(isset($_POST['btnCalc'])){
         $a = $_POST['so_a'];
-        $b = $_POST['so_b'];
-        $pt = $_POST['pheptinh'];
-        if($pt=='+') $kq = $a+$b;
-        elseif($pt=='-') $kq = $a-$b;
-        elseif($pt=='*') $kq = $a*$b;
-        elseif($pt=='/'){
-            if($b==0) $kq = 'Math Error!';
-            else $kq = $a/$b;
-        }
-        elseif($pt=='%'){
-            if($b==0) $kq = 'Math Error!';
-            else $kq = $a%$b;
+        if(!is_numeric($a)) $a = 'Error number a';
+        
+        $b = $_POST['so_b']; 
+        if(!is_numeric($b)) $b = 'Error number b';
+        
+        if(is_numeric($a) && is_numeric($b)){
+            $pt = $_POST['pheptinh'];
+            if($pt=='+') $kq = $a+$b;
+            elseif($pt=='-') $kq = $a-$b;
+            elseif($pt=='*') $kq = $a*$b;
+            elseif($pt=='/'){
+                if($b==0) $kq = 'Math Error!';
+                else $kq = $a/$b;
+            }
+            elseif($pt=='%'){
+                if($b==0) $kq = 'Math Error!';
+                else $kq = $a%$b;
+            }
         }
     }
     
     ?>
     <form method="POST">
-        <input type="number" name="so_a" placeholder="Enter number a" value="<?= isset($a) ? $a : '' ?>">
+        <input type="text" name="so_a" placeholder="Enter number a" value="<?= isset($a) ? $a : '' ?>">
         <select name="pheptinh">
             <?php foreach($arrPT as $key => $pheptinh):?>
-            <option value="<?=$key?>"><?=$pheptinh?></option>
+            <option value="<?=$key?>"
+                <?=isset($pt) && $pt==$key ? 'selected' : ''?>
+            ><?=$pheptinh?></option>
             <?php endforeach?>
         </select>
-        <input type="number" name="so_b"
+        <input type="text" name="so_b"
         value="<?php echo isset($b) ? $b : ''?>"
         placeholder="Enter number b">
         <input type="submit" value="Calc" name="btnCalc">
