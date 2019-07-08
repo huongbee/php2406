@@ -28,15 +28,27 @@
     
     ?>
     <form method="POST">
-        <input type="number" name="so_a" placeholder="Enter number a" value="<?php ?>">
+        <input type="number" name="so_a" placeholder="Enter number a" value="<?= isset($a) ? $a : '' ?>">
         <select name="pheptinh">
-            <option value="+">+</option>
-            <option value="-">-</option>
-            <option value="*">*</option>
-            <option value="/">/</option>
-            <option value="%">%</option>
+            <option value="+"
+                <?=isset($pt) && $pt=='+' ? 'selected' : '' ?>
+            >Cộng</option>
+            <option value="-"
+                <?=isset($pt) && $pt=='-' ? 'selected' : '' ?>
+            >Trừ</option>
+            <option value="*"
+                <?=isset($pt) && $pt=='*' ? 'selected' : '' ?>
+            >Nhân</option>
+            <option value="/"
+                <?=isset($pt) && $pt=='/' ? 'selected' : '' ?>
+            >Chia</option>
+            <option value="%"
+                <?=isset($pt) && $pt=='%' ? 'selected' : '' ?>
+            >Chia dư</option>
         </select>
-        <input type="number" name="so_b" placeholder="Enter number b">
+        <input type="number" name="so_b"
+        value="<?php echo isset($b) ? $b : ''?>"
+        placeholder="Enter number b">
         <input type="submit" value="Calc" name="btnCalc">
         <input type="text" placeholder="Result" disabled
         value="<?=isset($kq) ? $kq : ''?>">
