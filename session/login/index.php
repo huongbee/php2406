@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +15,15 @@
         <div class="row justify-content-center">
             <div class="col-6">
                 <h2 class="text-center">User Login</h2>
+                <?php if(isset($_SESSION['error'])): ?>
+                    <div class="alert alert-danger">
+                        <?php
+                        echo $_SESSION['error'];
+                        unset($_SESSION['error']);
+                        ?>
+                    </div>
+                <?php endif?>
+                
                 <form action="xulylogin.php" method="post">
                     <div class="form-group">
                         <span class="label label-default">Username: </span>
@@ -21,7 +33,7 @@
                         <span class="label label-default">Password: </span>
                         <input type="password" class="form-control" placeholder="Enter password" name="password">
                     </div>
-                    <button class="btn btn-primary">Login</button>
+                    <button class="btn btn-primary" name="btnLogin">Login</button>
                 </form>
             </div>
         </div>
