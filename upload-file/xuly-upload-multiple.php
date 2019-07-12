@@ -2,9 +2,26 @@
 $files = $_FILES['avatar'];
 
 // print_r($files);
-foreach($files['tmp_name'] as $key => $tmpName){
+// die;
+//check file size
+foreach($files['size'] as $key => $size){
+    if($size > 200*1024){
+        die('File '.$files['name'][$key].' too large!');
+    }
+}
+$arrExt = [
+    'image/png',
+    'image/jpeg',
+    'image/gif'
+];
+foreach($files['type'] as $key => $fileType){
+    if(!in_array($fileType, $arrExt)){
+        die('File '.$files['name'][$key].' not allow!');
+    }
+}
 
-    $name = rand(). $files['name'][$key];
+foreach($files['tmp_name'] as $key => $tmpName){
+    $name = rand().'-'. $files['name'][$key];
     $des = "images/$name";
     move_uploaded_file($tmpName, $des);
 }
