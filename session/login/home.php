@@ -41,5 +41,6 @@ session_start();
     
     ?>
     <p>Hello, <?=$fullname?> </p>
+    <p><a href="logout.php">Logout</a></p>
 </body>
 </html>
