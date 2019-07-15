@@ -1,23 +1,6 @@
 <?php
 session_start();
-$listUser = [
-    [
-        'username'=>'admin',
-        'password'=> md5('111111'),
-        'name'=>'Nguyen Admin'
-    ],
-    [
-        'username'=>'manager',
-        'password'=> md5('222222'),
-        'name'=> 'Le Van Manager'
-    ],
-    [
-        'username'=>'guest',
-        'password'=> md5('333333'),
-        'name'=> 'Tran Thi A'
-    ]
-];
-
+require_once 'users.php';
 
 if(isset($_POST['btnLogin'])){
     if(!isset($_POST['username']) || $_POST['username']===''){
@@ -43,8 +26,9 @@ if(isset($_POST['btnLogin'])){
         header('Location: index.php'); // redirect
         return;
     }
-    print_r($arrayUser);
-    echo 'login thanh cong';
+    $_SESSION['user'] = $username;
+    header('Location: home.php'); 
+    return;
 
 }
 
