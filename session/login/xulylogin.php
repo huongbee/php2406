@@ -25,7 +25,26 @@ if(isset($_POST['btnLogin'])){
         header('Location: index.php'); // redirect
         return;
     }
-    echo $username = $_POST['username'];
+    if(!isset($_POST['password']) || $_POST['password']===''){
+        $_SESSION['error'] = 'Missing password!';
+        header('Location: index.php'); // redirect
+        return;
+    }
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $arrayUser = array_column($listUser,'password','username');
+    if(!array_key_exists($username, $arrayUser)){
+        $_SESSION['error'] = 'Can not find user!';
+        header('Location: index.php'); // redirect
+        return;
+    }
+    if($arrayUser[$username] != md5($password)){
+        $_SESSION['error'] = 'Password invalid!';
+        header('Location: index.php'); // redirect
+        return;
+    }
+    print_r($arrayUser);
+    echo 'login thanh cong';
 
 }
 

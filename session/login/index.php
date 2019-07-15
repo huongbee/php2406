@@ -31,7 +31,7 @@ session_start();
                     </div>
                     <div class="form-group">
                         <span class="label label-default">Password: </span>
-                        <input type="password" class="form-control" placeholder="Enter password" name="password">
+                        <input type="text" class="form-control" placeholder="Enter password" name="password">
                     </div>
                     <button class="btn btn-primary" name="btnLogin">Login</button>
                 </form>
