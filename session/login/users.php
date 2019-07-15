@@ -1,11 +1,11 @@
 <?php
 
 $listUser = [
-    // [
-    //     'username'=>'admin',
-    //     'password'=> md5('111111'),
-    //     'name'=>'Nguyen Admin'
-    // ],
+    [
+        'username'=>'admin',
+        'password'=> md5('111111'),
+        'name'=>'Nguyen Admin'
+    ],
     [
         'username'=>'manager',
         'password'=> md5('222222'),

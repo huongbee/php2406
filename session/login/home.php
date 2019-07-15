@@ -13,11 +13,24 @@ session_start();
     <?php
     require_once 'users.php';
     if(!isset($_SESSION['user'])){
-        $_SESSION['error'] = 'Plz login first!';
-        header('Location: index.php'); // redirect
-        return;
+        //check cookie
+        if(!isset($_COOKIE['user'])){
+            $_SESSION['error'] = 'Plz login first!';
+            header('Location: index.php'); // redirect
+            return;
+        }
     }
-    $username = $_SESSION['user'];
+    // $username = isset($_SESSION['user']) ? $_SESSION['user'] : $_COOKIE['user'];
+    if(isset($_SESSION['user'])){
+        $username = $_SESSION['user'];
+        echo 'login by session';
+    }
+    elseif(isset($_COOKIE['user'])){
+        $username = $_COOKIE['user'];
+        // $_SESSION['user'] = $_COOKIE['user']; // duy tri qua trinh lam viec
+        setcookie('user',$username, time()+120); // gia han them cho cookie
+        echo 'login by cookie';
+    }
     $users = array_column($listUser, 'name', 'username');
     if(!isset($users[$username])){
         $_SESSION['error'] = 'Can not find user!';

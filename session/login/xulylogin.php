@@ -16,6 +16,7 @@ if(isset($_POST['btnLogin'])){
     $username = $_POST['username'];
     $password = $_POST['password'];
     $arrayUser = array_column($listUser,'password','username');
+    // print_r($arrayUser);die;
     if(!array_key_exists($username, $arrayUser)){
         $_SESSION['error'] = 'Can not find user!';
         header('Location: index.php'); // redirect
@@ -25,6 +26,9 @@ if(isset($_POST['btnLogin'])){
         $_SESSION['error'] = 'Password invalid!';
         header('Location: index.php'); // redirect
         return;
+    }
+    if(isset($_POST['remember']) && $_POST['remember']==1){
+        setcookie('user',$username, time()+120); //2mins
     }
     $_SESSION['user'] = $username;
     header('Location: home.php'); 

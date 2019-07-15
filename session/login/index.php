@@ -33,6 +33,12 @@ session_start();
                         <span class="label label-default">Password: </span>
                         <input type="text" class="form-control" placeholder="Enter password" name="password">
                     </div>
+                    <div class="form-group">
+                        <span>
+                            <input type="checkbox" name="remember" value="1"/>
+                            Remember me?
+                        </span>
+                    </div>
                     <button class="btn btn-primary" name="btnLogin">Login</button>
                 </form>
             </div>
