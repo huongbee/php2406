@@ -11,13 +11,12 @@ session_start();
 </head>
 <body>
     <?php
-require_once 'users.php';
-
+    require_once 'users.php';
     $username = $_SESSION['user'];
-    echo $username;
-    //find fullname
+    $users = array_column($listUser, 'name', 'username');
+    $fullname = $users[$username];
     
     ?>
-    <p>Hello, </p>
+    <p>Hello, <?=$fullname?> </p>
 </body>
 </html>
