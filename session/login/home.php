@@ -12,8 +12,18 @@ session_start();
 <body>
     <?php
     require_once 'users.php';
+    if(!isset($_SESSION['user'])){
+        $_SESSION['error'] = 'Plz login first!';
+        header('Location: index.php'); // redirect
+        return;
+    }
     $username = $_SESSION['user'];
     $users = array_column($listUser, 'name', 'username');
+    if(!isset($users[$username])){
+        $_SESSION['error'] = 'Can not find user!';
+        header('Location: index.php'); // redirect
+        return;
+    }
     $fullname = $users[$username];
     
     ?>
