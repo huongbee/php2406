@@ -24,4 +24,9 @@ function inSNT(int $n = 100): string{
 }
 echo inSNT();
 // var_dump(kiemtraSNT(6));
+
+// $a = 'Hello ';
+// $b = 'Teo';
+// // $c = $a . $b;
+// $a .= $b ; // $a = $a . $b
 ?>
