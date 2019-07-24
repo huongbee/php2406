@@ -22,8 +22,9 @@ class Son extends Father{
 }
 // $f = new Father;
 // echo $f->getMoney();
-$s = new Son;
-echo $s->getMoney(); // 10
-echo $s->getMoneyFather();  // 20
+// $s = new Son;
+// echo $s->getMoney(); // 10
+// echo $s->getMoneyFather();  // 20
+
 
 ?>
