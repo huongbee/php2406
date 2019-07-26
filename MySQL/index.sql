@@ -86,8 +86,8 @@ VALUES
 -- UPDATE
 UPDATE products 
 SET images = 'default.png'
-WHERE id=3 OR id=2  --  OR 
-                    --  AND    
+WHERE id=3 OR id=2  --  OR : HỢP v
+                    --  AND : GIAO ^
 
 -- update cot image = 'default.png' cho
 -- san pham co id = 2 va id = 3
