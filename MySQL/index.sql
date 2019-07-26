@@ -36,3 +36,17 @@ ADD  CONSTRAINT `FK_PRODUCTS_VS_TYPE` FOREIGN KEY (`type_id`)
 -- 22           11-2             2: staff
 --              22-2
             
+INSERT INTO products(
+    type_id, 
+    name, 
+    price, 
+    price_promotion,
+    product_index
+)
+VALUES(
+    1,
+    'Sản phẩm 1',
+    20000,
+    18000,
+    'SP1'
+);
