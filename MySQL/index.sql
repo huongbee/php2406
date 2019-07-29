@@ -122,3 +122,36 @@ WHERE id=3
 --     ORDER BY column type_orderby(ASC | DESC)
 --     LIMIT position, quantity
 --  ]
+
+-- Liên kết bảng
+SELECT list_column
+FROM table1, table2
+WHERE table1.khoa_chinh = table2.khoa_ngoai
+
+-- SELECT products.name AS tensp, categories.id, categories.name AS tenloai
+-- FROM categories , products
+-- WHERE categories.id = products.id_type
+--     AND categories.id IN (14,15)
+
+
+SELECT list_column
+FROM table1
+    INNER JOIN table2
+    ON table1.khoa_chinh = table2.khoa_ngoai
+
+SELECT list_column
+FROM table1
+    LEFT JOIN table2
+    ON table1.khoa_chinh = table2.khoa_ngoai
+
+SELECT list_column
+FROM table1
+    RIGHT JOIN table2
+    ON table1.khoa_chinh = table2.khoa_ngoai
+
+
+-- SELECT products.name AS tensp, categories.id, categories.name AS tenloai
+-- FROM products
+--     RIGHT JOIN categories
+--     ON categories.id = products.id_type
+-- WHERE categories.id IN (14,15)
